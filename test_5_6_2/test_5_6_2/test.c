@@ -1,6 +1,7 @@
 #define _CRT_SECURE_NO_WARNINGS 1
 #include<stdio.h>
 #include<stdlib.h>
+
 //void print(int num)
 //{
 //	int i = 1;
@@ -23,6 +24,7 @@
 //	system("pause");
 //	return 0;
 //}
+//
 //#include<stdio.h>
 //#include<stdlib.h>
 //int exchange(int *px, int *py)
@@ -43,6 +45,7 @@
 //	system("pause");
 //	return 0;
 //}
+//
 //int is_leap_year(int year)
 //{
 //	if (((year % 4 == 0) && (year % 100 != 0)) || (year % 400 == 0))
@@ -66,6 +69,7 @@
 //	system("pause");
 //	return 0;
 //}
+
 #include<math.h>
 int is_prime(int num)
 {

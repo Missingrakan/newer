@@ -13,12 +13,12 @@ void game()
 	char board[ROW][COL] = { 0 };
 	InitBoard(board, ROW, COL);
 	DisplayBoard(board, ROW, COL);//打印棋盘
-	while (1)
-	{
-		PlayMove();//玩家走
-		DisplayBoard(board, ROW, COL);
-		ComputerMove();//电脑走
-	}
+	//while (1)
+	//{
+	//	PlayMove();//玩家走
+	//	DisplayBoard(board, ROW, COL);
+	//	ComputerMove();//电脑走
+	//}
 }
 void test()
 {
