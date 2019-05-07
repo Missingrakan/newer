@@ -24,7 +24,47 @@ void DisplayBoard(char board[ROW][COL], int row, int col)
 		    printf("---|---|---\n");
 	}
 }
-void PlayMove(char board[ROW][COL], int row, int col)
+void PlayerMove(char board[ROW][COL], int row, int col)
 {
+	int x = 0;
+	int y = 0;
+	printf("玩家走:>\n");
 
+	while (1)
+	{
+		printf("请输入走的坐标:>", x, y);
+		scanf("%d%d", &x, &y);
+		if ((x >= 1 && x <= ROW) && (y >= 1 && y <= COL))
+		{
+			if (board[x - 1][y - 1] == ' ')
+			{
+				board[x - 1][y - 1] = '*';
+				break;
+			}
+			else
+			{
+				printf("坐标被占用，请重新输入!\n");
+			}
+		}
+		else
+		{
+			printf("输入坐标错误!\n");
+		}
+	}
+}
+void ComputerMove(char board[ROW][COL], int row, int col)
+{
+	int x = 0;
+	int y = 0;
+	printf("电脑走:>\n");
+	while (1)
+	{
+		x = rand() % row;
+		y = rand() % col;
+		if (board[x][y] == ' ')
+		{
+			board[x][y] = '#';
+			break;
+		}
+	}
 }

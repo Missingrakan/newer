@@ -13,16 +13,18 @@ void game()
 	char board[ROW][COL] = { 0 };
 	InitBoard(board, ROW, COL);
 	DisplayBoard(board, ROW, COL);//打印棋盘
-	//while (1)
-	//{
-	//	PlayMove();//玩家走
-	//	DisplayBoard(board, ROW, COL);
-	//	ComputerMove();//电脑走
-	//}
+	while (1)
+	{
+		PlayerMove(board,ROW,COL);//玩家走
+		DisplayBoard(board, ROW, COL);
+		ComputerMove(board, ROW, COL);//电脑走
+		DisplayBoard(board, ROW, COL);
+	}
 }
 void test()
 {
 	int input = 0;
+	srand((unsigned int)time(NULL));
 	do
 	{
 		menu();
