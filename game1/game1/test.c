@@ -17,6 +17,7 @@ void game()
 	{
 		PlayerMove(board,ROW,COL);//玩家走
 		DisplayBoard(board, ROW, COL);
+		checkwin(board, ROW, COL);
 		ComputerMove(board, ROW, COL);//电脑走
 		DisplayBoard(board, ROW, COL);
 	}

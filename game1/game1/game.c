@@ -68,3 +68,7 @@ void ComputerMove(char board[ROW][COL], int row, int col)
 		}
 	}
 }
+char checkwin(char board[ROW][COL], int row, int col)
+{
+	
+}
