@@ -89,7 +89,7 @@ void FindMine(char mine[ROWS][COLS], char show[ROWS][COLS], int row, int col)
 				//计算x，y周围有几个雷
 				int count = GetMineCount(mine, x, y);
 				//show[x][y] = count;
-				//此时count为狮子，而答应函数输出的是字符，故应转成字符
+				//此时count为数字，而答应函数输出的是字符，故应转成字符
 
 				//展示排查的信息
 				show[x][y] = count + '0';
